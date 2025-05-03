@@ -6,6 +6,8 @@ import {
   Description,
 } from "@headlessui/react";
 import register from "../../assets/register.jpg";
+import { SocialLinks } from "../Pages/socials";
+
 export const RegisterFormModal = ({ isOpen, onClose, switchToLogin }) => {
   const [formData, setFormData] = useState({
     nombre: "",
@@ -141,6 +143,7 @@ export const RegisterFormModal = ({ isOpen, onClose, switchToLogin }) => {
                     Iniciar Sesion
                   </button>
                 </div>
+                <SocialLinks />
               </form>
             </div>
           </div>
